@@ -172,7 +172,20 @@
       .hero-bottom{grid-template-columns:1fr;gap:34px;margin-top:34px}
       .example-visual{height:220px}
     }
+
+    .voice-wave{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:30px}
+    .wave-bars{display:flex;align-items:center;gap:5px;height:56px}
+    .wave-bars i{display:block;width:4px;height:var(--h);border-radius:3px;background:linear-gradient(180deg,#8a9480,#4d5748);transform-origin:center;animation:wave 1.3s ease-in-out infinite;animation-delay:var(--d)}
+    .wave-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);animation:pulse 2.4s ease-in-out infinite}
+    @keyframes wave{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+    @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+    .mock-chat .bubble,.mock-chat .recall,.mock-chat .wa{opacity:0;transform:translateY(8px);animation:pop .5s ease forwards}
+    .mock-chat>:nth-child(2){animation-delay:.2s}.mock-chat>:nth-child(3){animation-delay:1s}
+    .mock-chat>:nth-child(4){animation-delay:1.8s}.mock-chat>:nth-child(5){animation-delay:2.6s}
+    @keyframes pop{to{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){.mock-chat .bubble,.mock-chat .recall,.mock-chat .wa{opacity:1;transform:none}}
   </style>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="28c2b8e2-8a24-436c-ad82-98bc7c09de5e" data-domains="robertapistone89-cmyk.github.io"></script>
 </head>
 <body>
   <header class="topbar">
@@ -180,7 +193,7 @@
       <a class="brand" href="#inizio" aria-label="OPPO Ai Mind, inizio pagina">
         <span class="brand-mark">OPPO</span><span class="brand-divider"></span><span class="brand-sub">Ai Mind</span>
       </a>
-      <a class="nav-cta" href="https://wa.me/393206991485?text=Ciao%21%20Si%20confermo%20che%20%C3%A8%20OPPO-bello%20e%20sarei%20interessato%20agli%20auricolari%20Oppo%20AI%20Mind%20vorrei%20maggiori%20informazioni%21" target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp <span aria-hidden="true">↗</span></a>
+      <a data-umami-event="click-whatsapp" data-umami-event-posizione="menu-alto" class="nav-cta" href="https://wa.me/393206991485?text=Ciao%21%20Si%20confermo%20che%20%C3%A8%20OPPO-bello%20e%20sarei%20interessato%20agli%20auricolari%20Oppo%20AI%20Mind%20vorrei%20maggiori%20informazioni%21" target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
@@ -190,6 +203,10 @@
         <div class="eyebrow">Concept · Il tuo assistente personale, negli auricolari</div>
         <h1>OPPO Ai Mind</h1>
         <p class="payoff">Non limitarti ad ascoltare. Entra in dialogo con il tuo assistente personale.</p>
+        <div class="voice-wave" role="img" aria-label="Onda sonora animata: l’assistente ti ascolta">
+          <div class="wave-bars"><i style="--h:30%;--d:0.00s"></i><i style="--h:55%;--d:0.11s"></i><i style="--h:80%;--d:0.22s"></i><i style="--h:45%;--d:0.33s"></i><i style="--h:95%;--d:0.44s"></i><i style="--h:60%;--d:0.55s"></i><i style="--h:100%;--d:0.66s"></i><i style="--h:70%;--d:0.77s"></i><i style="--h:40%;--d:0.88s"></i><i style="--h:85%;--d:0.99s"></i><i style="--h:55%;--d:1.10s"></i><i style="--h:35%;--d:1.21s"></i><i style="--h:75%;--d:0.02s"></i><i style="--h:50%;--d:0.13s"></i><i style="--h:90%;--d:0.24s"></i><i style="--h:40%;--d:0.35s"></i><i style="--h:65%;--d:0.46s"></i><i style="--h:30%;--d:0.57s"></i></div>
+          <span class="wave-label">Ti ascolto…</span>
+        </div>
       </div>
 
       <figure class="hero-photo">
@@ -321,7 +338,7 @@
             <p>Pensi anche tu che sia OPPO-bello? Scrivimi direttamente su WhatsApp per farmelo sapere e ti darò maggiori informazioni sul progetto.</p>
           </div>
           <div class="signup-form-wrap signup-actions">
-            <a class="whatsapp-cta" href="https://wa.me/393206991485?text=Ciao%21%20Si%20confermo%20che%20%C3%A8%20OPPO-bello%20e%20sarei%20interessato%20agli%20auricolari%20Oppo%20AI%20Mind%20vorrei%20maggiori%20informazioni%21" target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp <span aria-hidden="true">↗</span></a>
+            <a data-umami-event="click-whatsapp" data-umami-event-posizione="sezione-finale" class="whatsapp-cta" href="https://wa.me/393206991485?text=Ciao%21%20Si%20confermo%20che%20%C3%A8%20OPPO-bello%20e%20sarei%20interessato%20agli%20auricolari%20Oppo%20AI%20Mind%20vorrei%20maggiori%20informazioni%21" target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp <span aria-hidden="true">↗</span></a>
             <p class="privacy">Il pulsante apre WhatsApp con un messaggio già impostato, che potrai modificare prima di inviarlo. OPPO Ai Mind è un concept indipendente: le funzionalità descritte sono esempi progettuali, non specifiche ufficiali confermate.</p>
           </div>
         </div>
